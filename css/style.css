@@ -1,0 +1,90 @@
+html {
+    font-size: 150%;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a.toc {
+    color: black;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+
+h2, h3, h4, h5 {
+    margin-top: 2em;
+}
+
+h2 {
+    margin-top: 5em;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding-left: 1ch;
+    padding-right: 1ch;
+    vertical-align: top;
+}
+
+table#ImmunizationGuide tr:nth-child(2n) th, table#ImmunizationGuide tr:nth-child(2n) td  {
+    background-color: #f2f2f2;
+}
+
+table#ImmunizationGuide th {
+    text-align: right;
+    white-space: nowrap;
+}
+
+div#JLVSearchables {
+    background-color: #ede5dd;
+    border: 1px solid black;
+    padding: 1ch;
+    width: 800px;
+}
+
+div#JLVSearchables th, div#JLVSearchables td:nth-child(2n) {
+    white-space: nowrap;
+}
+
+figcaption {
+    margin-top: 1ch;
+}
+
+ul, ol {
+    text-align: left;
+    margin: 0;
+    padding-left: 2ch;
+}
+
+img {
+    border: 1px solid black;
+    display: block;
+}
+
+.mermaid .small {
+    width: 100px;
+    white-space: normal;
+}
+
+.mermaid .medium {
+    width: 175px;
+    white-space: normal;
+}
+
+.mermaid .large {
+    width: 250px;
+    white-space: normal;
+}
+
+.mermaid .extralarge { 
+    width: 400px;
+    white-space: normal;
+}

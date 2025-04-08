@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>How to Scrub</title>
+    <link rel="icon" type="image/png" href="favicon.ico">
+    <meta name="author" content="doakey3">
+    <meta name="description" content="Instructions for scrubbing notes in MHS Genesis.">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/mermaid.min.js"></script>
+    <script src="js/mermaid_initialize.js"></script>
+    <script src="js/make_toc.js"></script>
+</head>
+<body>
+<h1>MHS Genesis Scrubbing Guide</h1>
+<div id="toc"></div>
+
+<div id="contents">
+<h2>Introduction</h2>
+<i>Clean charts save lives.</i><br><br>
+
+<p>Scrubbing should be completed 2 business days prior to the patient's appointment. This allows nursing staff to fill gaps in the schedule with acute appointments and space-a patients.</p>
+
+The purpose of scrubbing:
+<ul>
+    <li>Conservation of resources</li>
+        <ul>
+            <li>Is the appointment necessary?</li>
+                <ul>
+                    <li>Patient requesting refills, do they already have refills?</li>
+                </ul>
+            <li>Are we prepared for the appointment?</li>
+                <ul>
+                    <li>Do we have the equipment/supplies needed for the procedure?</li>
+                    <li>Have pre-procedure orders been made?</li>
+                </ul>
+            <li>Can the appointment be converted to a virtual visit?</li>
+                <ul>
+                    <li>Does the appointment need a physical exam?</li>
+                </ul>
+            <li>Can the appointment be converted to a CSSP?</li>
+            <ul>
+                <li>Explain that opening up physician appointments allows others with more complicated complaints to be seen</li>
+            </ul>
+        </ul>
+    <li>Maximizing effectiveness of patient care</li>
+        <ul>
+            <li>Have purple diamonds been reconciled?</li>
+            <li>Is the allergy section clean and computer-readable?</li>
+            <li>Has the immunization record been reconciled?</li>
+            <li>Has the recommendations tab been reconciled?</li>
+        </ul>
+</ul>
+<h2>Past Medical History</h2>
+Reconciling this section is usually left up to the physician.
+<ul>
+    <li>Discard/Remove duplicate diagnoses</li>
+    <li>Resolve problems that are no longer problematic, but may affect screening recommendations (e.g. "Hepatitis C")</li>
+    <li>Discard diagnoses that are not relevant, non-specific, or no longer valid</li>
+    <li>You can further edit past medical history while talking with the patient in the appointment. Ask, "Is all this correct? Is there something that isn't here that should be?"</li>
+</ul>
+<h3>Example: Cleaning Up a Past Medical History</h3>
+<figure><img src="media/problems_reconcile.png"><figcaption>Click the "Reconcile" button.</figcaption></figure>
+<figure><img src="media/problems_lifetime.png"><figcaption>Click the "Lifetime" button.</figcaption></figure>
+<figure><img src="media/problems_reconciliation.png"><figcaption>Evaluate the list of diagnoses. "Add" or "Discard", then click "Finish Later". Don't click the "Complete Reconciliation" button until you've reviewed the list of diagnoses with the patient.</figcaption></figure>
+
+<h2>Procedures</h2>
+<ul>
+    <li>Add any surgical procedures that may be clinically relevant and discard the rest.</li>
+</ul>
+<h3>EXAMPLE: Cleaning the Procedure History</h3>
+<figure><img src="media/procedures.png"><figcaption>Click the "Reconcile" button.</figcaption></figure>
+<figure><img src="media/procedures_adding.png"><figcaption>Discard procedures that are not clinically relevant and add those that are. Click the "Return to Review" button.</figcaption></figure>
+
+<h2>Allergies</h2>
+<ul>
+    <li>Convert any "Free-Text" allergies to tagged/computer-readable allergies</li>
+    <li>Remove duplicates</li>
+    <li>Remove allergies that are better listed as diagnoses.</li>
+</ul>
+
+<h3>EXAMPLE: Removing an Allergy</h3>
+<figure><img src="media/allergy_seasonal_allergies.png"><figcaption>This allergy doesn't belong. Click it.</figcaption></figure>
+<figure><img src="media/allergy_seasonal_allergies_modify.png"><figcaption>Click the "Modify" button.</figcaption></figure>
+<figure><img src="media/allergy_seasonal_allergies_cancel.png"><figcaption>Click the "Status" dropdown and "Cancel" it, then save.</figcaption></figure>
+
+<h2>Medications</h2>
+<ul>
+    <li>It's good to remove the purple diamonds for the medications section. This signals to other providers that the medications have been cleaned</li>
+</ul>
+
+<h3>EXAMPLE: Discarding old medications</h3>
+<figure><img src="media/medications_import.png"><figcaption>Click the import button</figcaption></figure>
+<figure><img src="media/medications_consent.png"><figcaption>Click the consent and lifetime buttons</figcaption></figure>
+<figure><img src="media/medications_discarding.png"><figcaption>Click the import button</figcaption></figure>
+
+<h2>Immunizations</h2>
+<h3>Adult Vaccination Recommendations, At a Glance</h3>
+<table id="ImmunizationGuide">
+    <tr>
+        <th><a href="https://www.cdc.gov/vaccines/covid-19/clinical-considerations/interim-considerations-us.html">COVID-19</a></th>
+        <td><ul><li>Anyone 65 or older should get 2 doses of the 2024-2025 COVID-19 vaccine (Moderna/Novavax/Pfizer) separated by 6 months unless they've never been vaccinated before and they are getting the Novavax, in which case they'll need a 3rd dose of any type 2 months later.</li><li>People who are 6 months old or older, including pregnant women, who are immunocompromised should get 2 doses of the 2024-2025 vaccine separated by 6 months.</li></td>
+    </tr>
+    <tr>
+        <th>Influenza</th>
+        <td>Everyone 6 months or older during <a href="https://www.cdc.gov/flu/about/season.html">Flu season</a>. (October to April). Peak flu activity is February.</td>
+    </tr>
+    <tr>
+        <th><a href="https://www.cdc.gov/hepatitis-b/hcp/vaccine-administration/index.html">Hepatitis B</a></th>
+        <td>3 doses of Engerix-B for non-immune adults, including pregnant women, is recommended <a href="https://www.cdc.gov/hepatitis-b/hcp/vaccine-administration/index.html">[link]</a>. The CDC recommends screening all adults aged 18 and older for Hep B at least once in their lifetime<a href="https://www.cdc.gov/hepatitis-b/hcp/diagnosis-testing/index.html">[link]</a>. Recommended for all adults aged 19-59 and those who are older than 59 who are at <a href="https://www.cdc.gov/hepatitis-b/hcp/diagnosis-testing/index.html">increased risk</a> (have multiple sex partners, or a history of Hep C, prisoners, drug-abusers, men who have sex with men, elevated liver enzymes).</td>
+    </tr>
+    <tr>
+        <th><a href="https://www.cdc.gov/vaccines/vpd/hpv/hcp/recommendations.html">HPV</a></th>
+        <td>3 doses at 0, 1, and 6 months for non-pregnant patients 15-26 years old. Pregnancy testing beforehand is not needed. Optional with diminishing returns for patients up to 45 years old.</td>
+    </tr>
+    <tr>
+        <th><a href="https://www.cdc.gov/vaccines/vpd/mmr/public/index.html">Measles, Mumps, Rubella</a></th>
+        <td>1 dose of live attenuated vaccine for healthy non-pregnant immunocompetent adults with good coagulation who are not immune who do not live near a person who is immunocompromised. 2 doses separated by 28 days is recommended for healthcare workers, college students, and international travelers. Women should avoid getting pregnant for 1 month after getting vaccinated.</td>
+    </tr>
+    <tr>
+        <th><a href="https://www.cdc.gov/pneumococcal/hcp/vaccine-recommendations/index.html">Pneumococcal Polysaccharide</a></th>
+        <td>PCV21 is recommended for all adults 50 years old or older and those at <a href="https://www.uptodate.com/contents/image/print?imageKey=ID/86782&topicKey=7021&source=see_link&search=">increased risk of pneumococcal disease</a></td>
+    </tr>
+    <tr>
+        <th><a href="https://www.cdc.gov/polio/hcp/vaccine-considerations/index.html">Polio</a></th>
+        <td>Not necessary for adults born and raised in the United States unless there is reason to suspect they were not vaccinated. Unvaccinated <a href="https://www.cdc.gov/pinkbook/hcp/table-of-contents/chapter-18-poliomyelitis.html#cdc_report_pub_study_section_10-contraindications-and-precautions-to-vaccination">non-pregnant</a> adults should recieve 3 IPV vaccines at 0, 1, and 13 months. Adults who have not completed the series should complete the series.</td>
+    </tr>
+    <tr>
+        <th><a href="https://www.cdc.gov/rsv/hcp/clinical-overview/">RSV</a></th>
+        <td>Recommended for all adults 75 years old or older and for adults 60-74 who are at increased risk (asthma, diabetes, BMI greater than 40, COPD, heart failure, nursing home resident).</td>
+    </tr>
+    <tr>
+        <th><a href="https://www.cdc.gov/tetanus/hcp/vaccine-recommendations/index.html">Tetanus</a></th>
+        <td>Recommended every 10 years. For adults who've never recieved Tdap and for those who are 65 or older, they should get a Tdap instead of Td. <a href="https://www.cdc.gov/pertussis/hcp/vaccine-recommendations/index.html">[link]</a></td>
+    </tr>
+    <tr>
+        <th><a href="https://www.cdc.gov/chickenpox/hcp/vaccine-considerations/index.html">Varicella</a></th>
+        <td>2 doses at 0 and 1 month are recommended for non-pregnant adults who are not immune. For immunocompromised people, check the <a href="https://www.cdc.gov/chickenpox/hcp/vaccine-considerations/specific-groups.html">Specific Groups</a> guide. A recollection of past infection with chickenpox is not considered good enough to confirm immunity. If born prior to 1980 and not a healthcare worker or immunocompromised, this is considered good enough for immunity.</td>
+    </tr>
+    <tr>
+        <th><a href="https://www.cdc.gov/shingles/hcp/vaccine-considerations/index.html">Zoster</a></th>
+        <td>2 doses of Shingrix at 0 and 2 months for immunocompetent adults 50 years old and older and for those who are/will be immunocompromised who are 19 years old or older. Don't give the vaccine to someone with active shingles. If Zostavax was previously given, wait at least 8 weeks before giving Shingrix.</td>
+    </tr>
+</table>
+
+<h3>Step 1: Add Unreconciled Immunizations</h3>
+<figure><img src="media/immunizations_reconciling.png"><figcaption>Click the reconcile button.</figcaption></figure>
+<figure><img src="media/immunizations_reconciling_adding.png"><figcaption>Add each of the immunizations, then "Return to Review".</figcaption></figure>
+
+<br>
+<div id="JLVSearchables">
+<b>JLV Searchables</b>
+<table>
+    <tr>
+        <th>Hepatitis B</th>
+        <td>
+            <ul>
+                <li>Hepatitis B Surface Ab</li>
+                OR
+                <li>Hepatitis B Core Ab</li>
+            </ul>
+            <td rowspan="2">If "POSITIVE", then the patient is immune. and "EQUIVOCAL" or "NEGATIVE" means they are not immune. Some results have an interpretation to help clarify.</td>
+    </tr>
+    <tr>
+        <th>Varicella</th>
+        <td>Varicella Zoster Virus Ab</td>
+    </tr>
+    <tr>
+        <th>Measles<br>Mumps<br>Rubella</th>
+        <td>
+            <ul>
+                <li>Rubeola Virus Ab IgG</li>
+                <li>Mumps Virus Ab IgG</li>
+                <li>Rubella Virus Ab IgG</li>
+            </ul>
+        </td>
+        <td>Look for a POSITIVE or check the interpretation. All 3 must be POSITIVE before marking the MMR vaccine as contraindicated.</td>
+    </tr>
+</table>
+</div>
+<h3>ALGORITHM: Immunizations Reconciliation</h3>
+<div class="mermaid">
+flowchart TD
+    Start[Patient is due for vaccine]
+
+    Checkable[<div>Recommended vaccine is one of:<ul><li>Hepatitis B</li><li>Measles, Mumps, Rubella</li><li>Varicella</li></ul></div>]
+    Yes[Yes]
+    No[No]
+
+    CheckJLV[<div>Check JLV<br>Laboratory History</div>]
+
+    LabImmunity[<div class="small">Laboratory evidence of immunity</div>]
+    LabNonImmunity[<div class="small">Laboratory evidence of <b>non</b>-immunity</div>]
+    LabNeverTested[<div class="small">No laboratory study available.</div>]
+
+    PositiveTiter[<div class="medium">Update immunization record:<ol><li>#quot;Chart Not Given#quot;</li><li>#quot;Contraindicated#quot;</li><li>#quot;Positive Titer#quot;</li></ol></div>]
+    UpdateSharedHPI[<div class="medium">Add a note to the <span style="white-space: nowrap; font-weight: bold;">Shared HPI</span>:</br> #quot;Laboratory evidence of non-immunity to Hepatitis B in 2009#quot;</div>]
+    Leave[<div class="medium">Leave immunization showing as #quot;Due#quot;.</div>]
+
+    ProviderDiscuss[<div class="medium">Provider will discuss next steps with the patient.</div>]
+
+    Start --> Checkable
+
+    Checkable --> Yes --> CheckJLV
+    Checkable --> No
+
+    No --> ProviderDiscuss
+
+    CheckJLV --> LabImmunity
+    CheckJLV --> LabNonImmunity
+    CheckJLV --> LabNeverTested
+
+    LabImmunity --> PositiveTiter
+    LabNonImmunity --> UpdateSharedHPI
+    UpdateSharedHPI --> Leave
+    LabNeverTested --> Leave
+
+    Leave --> ProviderDiscuss
+</div>
+
+<h3>EXAMPLE: Varicella Immune</h3>
+<figure><img src="media/immunizations_varicella.png"><figcaption>The patient is showing due for a varicella vaccine in MHS Genesis.</figcaption></figure>
+<figure><img src="media/immunizations_varicella_positive.png"><figcaption>The patient had a positive antibody test (titer) for varicella in 2019, indicating immunity. Set an early "Start Date" like the year "1980".</figcaption></caption></figure>
+<figure><img src="media/immunizations_varicella_documenting.png"><figcaption>Access the menu to update the immunization using the "+" dropdown button</figcaption></figure>
+<figure><img src="media/immunizations_varicella_documenting2.png"><figcaption>Select "Chart Not Given"</figcaption></caption></figure>
+<figure><img src="media/immunizations_varicella_documenting3.png"><figcaption>Select Varicella</figcaption></caption></figure>
+<figure><img src="media/immunizations_varicella_documenting5.png"><figcaption>Indicate the vaccine is contraindicated because the patient had a positive titer and submit.</figcaption></caption></figure>
+<figure><img src="media/immunizations_varicella_documenting6.png"><figcaption>The vaccine will no longer show as "Due" in the patient's Immunizations tab.</figcaption></caption></figure>
+
+<h3>EXAMPLE: Hepatitis B Non-Immune</h3>
+<figure><img src="media/immunizations_hepatitisb.png"><figcaption>The patient is showing due for a Hepatitis B vaccine in MHS Genesis.</figcaption></figure>
+<figure><img src="media/immunizations_hepatitisb2.png"><figcaption>The patient is showing no antibodies, meaning they are not immune. If unsure, you can check the "Interpretation".</figcaption></figure>
+<figure><img src="media/immunizations_hepatitisb_nonimmune.png"><figcaption>The interpretation also shows the patient is NEGATIVE for having antibodies because the number of antibodies found was less than the reference range.</figcaption></figure>
+<figure><img src="media/immunizations_hepatitisb4.png"><figcaption>Add a comment to the shared HPI. This tells the provider that retesting for immunity may not be appropriate.</figcaption></figure>
+
+
+<h2>Recommendations</h2>
+<h3>Adult - Cervical Cancer Screening</h3>
+<ul>
+    <li><a href="https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/cervical-cancer-screening" target="_blank">USPSTF Guidelines for Cervical Cancer Screening</a></li>
+    <ul>
+        <li>Women with a cervix who are between 21 and 65 years old should be regularly screened for cervical cancer.</li>
+        <li>21-29: Routine screening every 3 years</li>
+        <li>30-65: Routine screening every 5 years</li>
+    </ul>
+    <li>Women with a history of total hysterectomy should have a "chronic" diagnosis: "Acquired absence of uterus and cervix"</li>
+        <ul>
+            <li>This will remove warnings about being due for a pap smear.</li>
+        </ul>
+</ul>
+
+<h4>ALGORITHM: Cervical Cancer Reconciliation</h4>
+<div class="mermaid">
+flowchart TD
+    Start[<div class="small">Patient shows due for pap smear</div>]
+    JLVResult[<div class="small">JLV #quot;Pap#quot;/#quot;Gyn#quot; is available</div>]
+    JLVNoResult[<div class="small">No Pap smear results available</div>]
+    Leave[<div class="medium">Leave the recommendation showing as Due</div>]
+
+    Age2129[<div class="small">Patient is 21-29 years old and result is < 3 years old</div>]
+    Age30Up[<div class="small">Patient is 30+ years old and result is < 5 years old</div>]
+    OtherCategory[<div class="small">Results are too old</div>]
+
+    NegCytology2129[<div class="medium">#quot;Negative for intraepithelial lesion or malignancy#quot;</div>]
+    NegCytology30Up[<div class="medium">#quot;Negative for intraepithelial lesion or malignancy#quot;</div>]
+
+    NegHPV[<div class="small">#quot;Negative#quot; for HPV.</div>]
+    HPVUnavailable[<div class="small">HPV Result Unavailable</div>]
+    HPVPositive[<div class="small">HPV Positive</div>]
+    AnyOther[<div class="small">Result is unsatisfactory or abnormal</div>]
+
+    WriteHPI[<div class="medium">Annotate finding and date in shared HPI</div>]
+    Update[<div class="medium">Update the #quot;Adult - Cervical Cancer Screening#quot; in Genesis</div>]
+    Update2[<div class="medium">Update the #quot;Adult - Cervical Cancer Screening#quot; in Genesis. Check off #quot;Normal#quot; in Cytology results and #quot;Negative#quot; in HPV results</div>]
+    Update3[<div class="medium">Update the #quot;Adult - Cervical Cancer Screening#quot; in Genesis. Check off #quot;Normal#quot; in Cytology results.</div>]
+
+    Start --> JLVResult
+    Start --> JLVNoResult
+    JLVNoResult --> Leave
+
+    JLVResult --> Age2129
+    JLVResult --> Age30Up
+    JLVResult --> OtherCategory
+
+    OtherCategory --> Leave
+    Age2129 --> NegCytology2129
+    Age2129 --> AnyOther
+
+    Age30Up --> AnyOther
+    Age30Up --> NegCytology30Up
+
+
+    AnyOther --> WriteHPI
+    NegCytology2129 --> Update
+
+    NegCytology30Up --> HPVPositive
+    NegCytology30Up --> NegHPV
+    NegCytology30Up --> HPVUnavailable
+    NegHPV --> Update2
+    HPVPositive --> WriteHPI
+    HPVUnavailable --> Update3
+
+</div>
+
+<h4>EXAMPLE: Updating Cervical Cancer Screening</h4>
+<figure><img src="media/pap_smear_due.png"><figcaption>This patient's cervical cancer screening is showing due.</figcaption></figure>
+<figure><img src="media/pap_smear_searching.png"><figcaption>After searching "pap" in the JLV, a result was found. This patient is older than 30, so a result less than 5 years old is valid. If no result were found, searching for "gyn" would have been the next step. This patient had no HPV result available.</figcaption></figure>
+<figure><img src="media/pap_smear_result.png"><figcaption>The result of the pap smear cytology report was "Negative for intraepithelial lesion or malignancy". This is a normal result.</figcaption></figure>
+<figure><img src="media/pap_smear_action.png"><figcaption>Select the pap smear, click "Actions", "Outside Results"</figcaption></figure>
+<figure><img src="media/pap_smear_filling.png"><figcaption>Fill out the form by completing the date, "Performed on date updated", then select the appropriate cytology result and HPV result. Since this patient did not have an HPV result, we will leave it unchecked.</figcaption></figure>
+
+<h3>Adult - HIV Screening</h3>
+<ul>
+    <li><a href="https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/human-immunodeficiency-virus-hiv-infection-screening" target="_blank">USPSTF Guidelines for HIV</a></li>
+    <ul>
+        <li>Everyone aged 15 to 65 should be screened at least once for HIV</li>
+    </ul>
+    <li>Search for "** Sensitive **" in the JLV. You don't need to know the result, only that the patient was screened.</li>
+    <li>Update the recommendations tab the way you would for a lipid panel screening.</li>
+</ul>
+
+<figure><img src="media/hiv_result.png"><figcaption>An example HIV result in the JLV</figcaption></figure>
+
+<h3>Adult - Hepatitis C Screening</h3>
+<ul>
+    <li><a href="https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/hepatitis-c-screening" target="_blank">USPSTF Guidelines for Hepatitis C Screening</a></li>
+    <ul>
+        <li>Adults aged 18-79 should be screened for Hepatitis C at least once</li>
+    </ul>
+    <li>Search for "Hepatitis C ab" in the JLV.</li>
+    <li>Update the recommendations tab the way you would for a lipid panel screening.</li>
+</ul>
+
+<h3>Adult - Lipid Panel Screening</h3>
+<ul>
+    <li><a href="https://www.uspreventiveservicestaskforce.org/uspstf/recommendation/statin-use-in-adults-preventive-medication" target="_blank">USPSTF Guidelines for Lipid Panel Screening</a></li>
+    <ul>
+        <li>Adults aged 40-75 should be screened if they have risk factors (high cholesterol, diabetes, high blood pressure, smoking) and a 10-year ASCVD risk greater than 10%</li>
+        <ul>
+            <li>In order to calculate a 10-year ASCVD risk, a lipid panel is needed. Identifying high cholesterol requires a lipid panel. Thus, all patients aged 40-75 should be screened</li>
+        </ul>
+    </ul>
+    <li>Guidelines for screening younger patients varies. <a href="https://www.uptodate.com/contents/screening-for-lipid-disorders-in-adults" target="_blank">Uptodate states</a>, "For young adults who have not been screened as children, we obtain a baseline lipid profile at the time of initiation of care with an adult primary care practitioner to ѕсrееո for familial hуреrliрidеmiа and to assess cardiovascular disease (CVD) risk." This seems to align with the <a href="https://www.acc.org/~/media/Non-Clinical/Files-PDFs-Excel-MS-Word-etc/Guidelines/2018/Guidelines-Made-Simple-Tool-2018-Cholesterol.pdf" target="_blank">guidelines from the American College of Cardiology.</a></li>
+</ul>
+<h4>EXAMPLE: LDL Cholesterol Completed</h4>
+<figure><img src="media/lipid_panel_due.png"><figcaption>"Adult - Lipid Screening" is showing "Due"</figcaption></figure>
+<figure><img src="media/lipid_panel_done.png"><figcaption>The patient had an "LDL" (Low Density Lipoprotein) done in November of 2022</figcaption></figure>
+<figure><img src="media/lipid_panel_selecting_action.png"><figcaption>Update the screening: click it, select "Action", then "Done Elsewhere"</figcaption></figure>
+<figure><img src="media/lipid_panel_saving.png"><figcaption>Edit the date, select "Recommendation Satisfied Elsewhere", then save</figcaption></figure>
+
+<h2>Finalizing a Scrub</h2>
+<figure><img src="media/scrubbed_note.png"><figcaption>In the "Home" view, click the notepad icon.</figcaption></figure>
+<figure><img src="media/scrubbed_note_save.png"><figcaption>Add a note and save</figcaption></figure>
+
+</div>
+</body>
+</html>
